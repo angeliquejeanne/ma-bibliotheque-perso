@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style-souhait.css">
+
+    <title>Ma liste de souhait</title>
+
+</head>
+
+<body>
+<!-- Titre de mon site et son menu (communs à toutes les pages) -->
+<header id="text">
+    <h1>Ma petite <span>Bibliothèque</span> Perso</h1>
+    <h2>Un monde <span>&hearts;</span> de livres</h2>
+
+    <div class="link">
+        <h3><a href="../index.html">Accueil</a></h3>
+        <h3><a href="p-a-l.html">Ma pile à lire</a></h3>
+        <h3><a href="top-dix.html">Mon top dix</a></h3>
+        <h3><a href="livres-lu.html">Mes livres lu</a></h3>
+    </div>
+</header>
+<!-- conteneur avec une section titre + sous titre et barre de recherche par terme (fonctionnelle)-->
+<div class="container">
+
+    <section class="search">
+
+    <h1>Ma Liste de souhait</h1>
+    <h2><a href="luna-coll-complete.html">La liste<span>&hearts;</span></a></h2>
+
+    <form action="" id="search-books">
+    <input type="text" placeholder="Rechercher un livre" />
+    </form>
+
+    </section>
+<!-- "tableau" avec la liste des livres + btn delete (seul)-->
+    <div id="book-list">
+        <h2>Toutes collections confondues</h2>
+
+        <ul>
+
+            <li class="listss">
+            <span class="book-name">La malédiction de l'ange noir Michelle Hauf</span>
+            <span class="btn btn-delete">Delete</span>
+            </li>
+
+            <li class="listss">
+            <span class="book-name"> La légende du royaume oublié Deborah Hale</span>
+            <span class="btn btn-delete">Delete</span>
+            </li>
+
+            <li class="listss">
+            <span class="book-name">La légende du dragon Christie Golden</span>
+            <span class="btn btn-delete">Delete</span>
+            </li>
+
+            <li class="listss">
+            <span class="book-name">La malédiction de l'ange noir Michelle Hauf</span>
+            <span class="btn btn-delete">Delete</span>
+            </li>
+
+            <li class="listss">
+            <span class="book-name"> La légende du royaume oublié Deborah Hale</span>
+            <span class="btn btn-delete">Delete</span>
+            </li>
+
+        </ul>
+    </div>
+<!--btn supp intégralité et form d'ajout de livre-->
+    <section id="clear-all">
+        <span class="btn btn-clear">Tout supprimer?</span>
+    </section>
+
+    <form id="add-book" action="#">
+        <input type="text" placeholder="Ajouter un livre" id="book-input" />
+        <button class="btn btn-add">Add</button>
+    </form>
+
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

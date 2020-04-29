@@ -1,0 +1,203 @@
+* 
+{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body 
+{
+line-height: 1.6;
+background-color: whitesmoke;
+color: Black;
+}
+header
+{
+    width: 100%;
+    height: 250px;
+}
+a
+{
+text-decoration: none;
+}
+header .link
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header .link h3 
+{
+    padding: 2%;
+}
+header .link h3 a
+{
+    color: black;
+}
+#text 
+{
+color: Black;
+text-align: center;
+border-bottom: 1px solid black;
+}
+#text h1
+{
+font-size: 3rem;
+}
+#text h2 
+{
+font-size: 2rem;
+}
+#text span 
+{
+color: RED;
+}
+.container
+{
+    text-align: center;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto;
+    box-shadow: 10px 10px 10px 10px black;
+}
+.search
+{
+    background-color: #d6d6d6;
+    width: 100%;
+    text-align: center;
+}
+.search h1
+{
+    margin: 1.5rem 0;
+    font-size: 2.5rem;
+}
+.search h2 a
+{
+  margin: 1.5rem 0;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+.search h2 a span
+{
+  color: red;
+}
+input 
+{
+width: 40%;
+padding: 0.5rem 0.5rem;
+margin-bottom: 1.5rem;
+transition: 300ms;}
+input:focus 
+{
+outline: none;
+box-shadow: 10px 10px 10px 10px black;
+transform: scale(1.1, 1.1);
+}
+#book-list
+{
+    text-align: left;
+    width: 90%;
+    color: black;
+    padding: 1.5rem;
+}
+#book-list h2
+{
+margin-bottom: 1.5rem;
+color: black;
+font-size: 2rem;
+text-align: center;
+}
+#book-list li
+{
+    padding: 1.2rem 0;
+    padding-left: 1rem;
+    box-shadow: 3px 3px 10px black;
+    border-left: 5px solid black;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 400ms;
+    list-style: none;
+}
+#book-list li:hover
+{
+    border-left: 5px solid Black;
+    transform: translateX(15px);
+}
+#clear-all 
+{
+    text-align: center;
+    width: 100%;
+    background: transparent;
+    padding-bottom: 1.5rem;
+}
+#clear-all span
+{
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+#clear-all span:hover
+{
+    color: red;
+}
+#add-book 
+{
+    display: flex;
+    justify-content: center;
+    background-color: #d6d6d6;
+    width: 100%;
+    border-top: 3px solid Black;
+    box-shadow: 3px 3px 10px black;
+    padding: 1rem 0;
+    text-align: center;
+}
+#add-book input
+{
+    padding: 0.6rem 0.5rem;
+    transition: 400ms;
+}
+#add-book input:focus
+{
+    padding: 0.7rem 0;
+    padding-right: 9rem;
+    outline: none;
+}
+.btn
+{
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    background-color: RED;
+    margin-right: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+}
+.btn:hover
+{
+    background-color: slateblue;
+}
+.btn-clear
+{
+    padding: 0.5rem 2.5rem;
+    background-color: #d6d6d6;
+    display: inline-block;
+}
+.btn-clear:hover
+{
+    background-color: yellow;
+    transform: scale(1.1, 1.1);
+}
+.btn-add
+{
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin-left: .5rem;
+    border: none;
+    background-color: seashell;
+    color: black;
+}
