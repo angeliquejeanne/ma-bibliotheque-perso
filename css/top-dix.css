@@ -1,0 +1,111 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
+figure.image
+{
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+}
+figure.image * 
+{
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+figure.image img 
+{
+  max-width: 200px;
+  height: 300px;
+  vertical-align: top;
+}
+figure.image figcaption 
+{
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+figure.image h2,
+figure.image h4 
+{
+  margin: 0;
+}
+figure.image h2 
+{
+  font-weight: 600;
+}
+figure.image h4 
+{
+  font-weight: 400;
+  text-transform: uppercase;
+}
+figure.image i 
+{
+  font-size: 32px;
+}
+figure.image:after 
+{
+  background-color: whitesmoke;
+  position: absolute;
+  content: "";
+  display: block;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
+figure.image a 
+{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+figure.image:hover figcaption,
+figure.image.hover figcaption 
+{
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.image:hover:after,
+figure.image.hover:after 
+{
+  -webkit-transform: rotateX(0);
+  transform: rotateX(0);
+  opacity: 0.9;
+}
+.top 
+{
+  display: flex;
+}
+.first, .second
+{
+  justify-content: space-around;
+  margin-left: 5%;
+  margin-right: 5%;
+}
