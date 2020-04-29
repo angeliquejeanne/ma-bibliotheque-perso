@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mes livres de cours</title>
+    <link rel="stylesheet" href="../css/luna-coll.css">
+
+</head>
+
+<body>
+    <!-- My Favourite Books -->
+<header id="text">
+<h1>Ma petite <span>Bibliothèque</span> Perso</h1>
+<h2>Un monde <span>&hearts;</span> de livres</h2>
+<div class="link">
+
+<h3><a href="">Ma Liste de Souhaits</a></h3>
+<h3><a href="">Ma Pile à Lire</a></h3>
+<h3><a href="">Mes livres lu</a></h3>
+<h3><a href="">Les collections</a></h3>
+</div>
+</header>
+
+<div class="container">
+
+<section class="search">
+
+<h1>Collection Luna</h1>
+
+
+
+<section>
+
+        <ul id="categories" class="clr">
+
+              <li>
+                <div>
+                  <img src="http://ekladata.com/6wfaqtiLNLjsEY9RQjA_dxcS1Mk@150x240.jpg" alt=""/>
+                  <h1>La malédiction de l'ange noir Michelle Hauf</h1>
+                  <p><a href="https://www.babelio.com/livres/Hauf-La-malediction-de-lange-noir/120177">Voir +</a></p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <img src="http://ekladata.com/LYkujWmejqXmIDPWP3-cWjfSxBw@150x240.jpg" alt=""/>
+                  <h1> La légende du royaume oublié Deborah Hale</h1>
+                  <p><a href="https://www.babelio.com/livres/Hale-La-legende-du-royaume-oublie/13356">Voir +</a></p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <img src="http://ekladata.com/Qf50ejzZ2_9jcuyPy8Q8Kd5agZs.jpg" alt=""/>
+                  <h1>La légende du dragon  Christie Golden</h1>
+                  <p><a href="https://booknode.com/la_legende_du_dragon_074136">Voir +</a></p>
+                </div>
+              </li>
+            
+              <li>
+                <div>
+                  <img src="http://ekladata.com/y1e61J4TIczUWci8tA5p7MYascY.jpg" alt=""/>
+                  <h1>La Prophétie maudite  P. C. CAST</h1>
+                  <p><a href="https://www.babelio.com/livres/Cast-La-prophetie-maudite/182429">Voir +</a></p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <img src="http://ekladata.com/3auca20w8EtMpoILX6S50J7VaTI.jpg" alt=""/>
+                  <h1> La malédiction du dieu de pierre  Susan Krinard</h1>
+                  <p><a href="https://booknode.com/stone_god_tome_1_la_malediction_du_dieu_de_pierre_060268">Voir +</a></p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <img src="http://ekladata.com/DJF9UMWwF4VINVOlR5Djv92Ny3w.jpg" alt=""/>
+                  <h1>La dague d'argent Anne Kelleher</h1>
+                  <p><a href="https://www.babelio.com/livres/Kelleher-Les-portes-de-lOutremonde-tome-1--La-dague-darg/56386">Voir +</a></p>
+                </div>
+              </li>
+              
+              <li>
+                <div>
+                  <img src="http://ekladata.com/hSBAbTKlCAqlhRgx3ZHw9oFXUuE.jpg" alt=""/>
+                  <h1>Le secret de la rose blanche  Rachel Lee</h1>
+                  <p><a href="https://www.babelio.com/livres/Lee-Le-secret-de-la-rose-blanche/35363">Voir +</a></p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <img src="http://ekladata.com/N2aKdri8lEJ9RHI_nNp6tZi-xzI.jpg" alt=""/>
+                  <h1> L'amulette d'argent Anne Kelleher</h1>
+                  <p><a href="https://booknode.com/la_dague_d_argent_tome_2_l_amulette_d_argent_058226">Voir +</a></p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <img src="http://ekladata.com/79B4_zjK66o5NWbDenDakfqL3_E.jpg" alt=""/>
+                  <h1> L'oracle de margyle Deborah Hale</h1>
+                  <p><a href="https://booknode.com/l_oracle_de_margyle_060264">Voir +</a></p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <img src="http://ekladata.com/PYJ1SqLR328enECFZReNddzIR3o.jpg" alt=""/>
+                  <h1>  Gossamyr  Michele Hauf e</h1>
+                  <p><a href="https://booknode.com/gossamyr_070174">Voir +</a></p>
+                </div>
+              </li>
+
+          </ul>
+    </section>
+
+<script>
+        // SELECTING THE ELEMENT
+
+// Form Add Book Section
+const form = document.querySelector("#add-book");
+const bookInput = document.querySelector("#book-input");
+// List of book Section
+const bookLists = document.querySelector("#book-list ul");
+// Filter Section
+const filter = document.querySelector("#search-books input[type=text]");
+// Clear ALl
+const clearAll = document.querySelector("#clear-all span");
+
+
+// EVENT LISTENER CONTROLLER
+loadEventListener();
+function loadEventListener() {
+  // Adding the book into ul
+  form.addEventListener("submit", addBook);
+  // Delete the book using delegation
+  bookLists.addEventListener("click", deleteBook);
+  // LineThrough
+  bookLists.addEventListener("click", lineThroughs);
+  // Filter Section
+  filter.addEventListener("keyup", filterBooks);
+  // Clear All Book
+  clearAll.addEventListener("click", clearAllBook);
+  // Get book from local storage
+  document.addEventListener("DOMContentLoaded", getBooks);
+}
+
+// Get book from local storage
+function getBooks() {
+  let books;
+  // Check local storage
+  if (localStorage.getItem("books") === null) {
+    books = [];
+  } else {
+    books = JSON.parse(localStorage.getItem("books"));
+  }
+
+  books.forEach(function(book) {
+    // Create the element li
+    const li = document.createElement("li");
+    const bookName = document.createElement("span");
+    const deleteBtn = document.createElement("span");
+
+    // Add class name
+    li.classList.add("listss");
+    bookName.classList.add("book-name");
+    deleteBtn.classList.add("btn");
+    deleteBtn.classList.add("btn-delete");
+
+    // Add content to the element
+    bookName.textContent = book;
+    deleteBtn.textContent = "Delete";
+
+    // Append the element to the li
+    li.appendChild(bookName);
+    li.appendChild(deleteBtn);
+
+    // Append the li into ul
+    bookLists.appendChild(li);
+  });
+}
+
+// ADD BOOK FUNCTION
+
+function addBook(e) {
+  // check the input
+  if (bookInput.value === "") {
+    alert("Please Add Your Book");
+  } else {
+    console.log(bookInput.value);
+    // Create the element li
+    const li = document.createElement("li");
+    const bookName = document.createElement("span");
+    const deleteBtn = document.createElement("span");
+
+    // Add class name
+    li.classList.add("listss");
+    bookName.classList.add("book-name");
+    deleteBtn.classList.add("btn");
+    deleteBtn.classList.add("btn-delete");
+
+    // Add content to the element
+    bookName.textContent = bookInput.value;
+    deleteBtn.textContent = "Delete";
+
+    // Append the element to the li
+    li.appendChild(bookName);
+    li.appendChild(deleteBtn);
+
+    // Append the li into ul
+    bookLists.appendChild(li);
+
+    // Store input in LS
+    storeBookInLocalStorage(bookInput.value);
+
+    // Clear Back The Input
+    bookInput.value = "";
+
+    clearAll.style.display = "inline-block";
+
+    // Prevent Default Behaviour of Form
+    e.preventDefault();
+  }
+}
+
+// Store In Local Storage
+function storeBookInLocalStorage(book) {
+  let books;
+  // Check local storage
+  if (localStorage.getItem("books") === null) {
+    books = [];
+  } else {
+    books = JSON.parse(localStorage.getItem("books"));
+  }
+  // Push the book into books array
+  books.push(book);
+  // set the value of books into json
+  localStorage.setItem("books", JSON.stringify(books));
+}
+
+// LineThrough
+function lineThroughs(e) {
+  if (e.target.classList.contains("listss")) {
+    if (
+      e.target.firstElementChild.style.textDecorationLine === "line-through"
+    ) {
+      e.target.firstElementChild.style.textDecorationLine = "none";
+      e.target.firstElementChild.style.color = "black";
+      e.target.style.background = "white";
+    } else {
+      e.target.firstElementChild.style.textDecorationLine = "line-through";
+      e.target.firstElementChild.style.color = "#b8b8b8";
+      e.target.style.background = "#f4f4f4";
+    }
+  }
+}
+
+// Delete the books
+function deleteBook(e) {
+  //  target the buttons
+  if (e.target.classList.contains("btn-delete")) {
+    // Remove the parent element of button which is li
+    if (
+      confirm("This action will remove your book completely. Are You Sure ?")
+    ) {
+      e.target.parentElement.remove();
+
+      // Remove from the local storage too
+      removeBookFromLocalStorage(e.target.previousSibling);
+    }
+  }
+}
+
+function removeBookFromLocalStorage(bookItem) {
+  let books;
+  // Check local storage
+  if (localStorage.getItem("books") === null) {
+    books = [];
+  } else {
+    books = JSON.parse(localStorage.getItem("books"));
+  }
+  books.forEach(function(book, index) {
+    if (bookItem.textContent === book) {
+      books.splice(index, 1);
+    }
+  });
+  localStorage.setItem("books", JSON.stringify(books));
+}
+
+// FILTER THE BOOKS
+
+function filterBooks(e) {
+  // Take the value from the input and convert into lower case
+  const words = e.target.value.toLowerCase();
+  // Get the book list
+  const books = document.querySelectorAll("#book-list li");
+  // Loop Through each book li
+  books.forEach(function(book) {
+    const booksText = book.firstElementChild.textContent;
+    //  Compare the booksText content with words
+    if (booksText.toLowerCase().indexOf(words) != -1) {
+      book.style.display = "flex";
+    } else {
+      book.style.display = "none";
+    }
+  });
+}
+
+// CLEAR ALL BOOK
+function clearAllBook() {
+  bookLists.innerHTML = "";
+  clearAll.style.display = "none";
+
+  // clear all from ls
+  clearTasksFromLocalStorage();
+}
+
+function clearTasksFromLocalStorage() {
+  localStorage.clear();
+}
+</script>
+</body>
+</html>
+
