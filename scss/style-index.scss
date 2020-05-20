@@ -64,13 +64,13 @@ h2 span
 .book 
 {
     animation: stack .3s linear forwards;
-    background-color: #E8D8A8;
+    background-color: rgb(241, 230, 197);
     border-color: #A0BD92;
     border-width: 5px;
-    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 8px;
     border-left-width: 7px;
-    border-top-left-radius: 5px;  
-    border-right-color: white;
+    border-top-left-radius: 8px;  
+    border-right: 7px;
     border-style: solid;
     box-shadow: inset 5px 3px 10px -5px #444;
     height: 33px;
@@ -79,8 +79,8 @@ h2 span
     width: 200px;
 &:before, &:after 
 {
-    border-bottom: 3px solid darken(#E8D8A8, 9%);
-    border-top: 3px solid darken(#E8D8A8, 9%);
+    border-bottom: 3px solid darken(green, 9%);
+    border-top: 3px solid darken(blue, 9%);
     content: "";
     height: 3px;
     left: 4px;
@@ -100,7 +100,7 @@ h2 span
     margin-top:-2em;
     background-color: #E8D8A8;
     border-color: #444;
-    border-right-color: #E8D8A8;
+    border-right-color: whitesmoke;
     height: 26px;
     width: 320px;
     padding-left: .5em;
@@ -111,7 +111,7 @@ h2 span
     animation-delay: 7.5s;
     margin-left: 2em;
     border-color: #ffae3d;
-    border-right-color: #E8D8A8;
+    border-right-color: whitesmoke;
     height: 16px;
     width: 220px;
     padding-left: .5em;
@@ -121,7 +121,7 @@ h2 span
 {
     animation-delay: 7s;
     border-color: #d303fd;
-    border-right-color: #E8D8A8;
+    border-right-color: whitesmoke;
     height: 36px;
     width: 280px;
     padding-left: .5em;
@@ -132,7 +132,7 @@ h2 span
     animation-delay: 6.5s;
     margin-left: 2em;
     border-color: rgb(255, 0, 0);
-    border-right-color: #E8D8A8;
+    border-right-color: whitesmoke;
     height: 46px;
     width: 220px;
     padding-left: .5em;
@@ -142,7 +142,7 @@ h2 span
 {
     animation-delay: 6s;
     border-color: rgb(11, 94, 1);
-    border-right-color: #E8D8A8;
+    border-right-color: whitesmoke;
     height: 18px;
     width: 380px;
     padding-left: -.5em;
@@ -152,7 +152,7 @@ h2 span
 {
     animation-delay: 5.5s;
     border-color: #d303fd;
-    border-right-color: #E8D8A8;
+    border-right-color: whitesmoke;
     height: 36px;
     width: 280px;
     padding-left: .5em;
@@ -163,7 +163,7 @@ h2 span
     animation-delay: 5s;
     margin-left: 2em;
     border-color: #bb8c00;
-    border-right-color: #E8D8A8;
+    border-right-color: whitesmoke;
     height: 28px;
     width: 260px;
     padding-left: 0em;
@@ -173,7 +173,7 @@ h2 span
 {
     animation-delay: 4.5s;
     border-color: #5e1d1d;
-    border-right-color: #E8D8A8;
+    border-right-color: whitesmoke;
     height: 40px;
     width: 260px;
     padding-left: .5em;
@@ -184,7 +184,7 @@ h2 span
     animation-delay: 4s;
     margin-left: 2em;
     border-color: #455971;
-    border-right-color: #E8D8A8;
+    border-right-color: whitesmoke;
     height: 30px;
     width: 350px;
     padding-left: 1.5em;
@@ -194,7 +194,7 @@ h2 span
     animation-delay: 3.5s;
     margin-left: 2em;
     border-color: rgb(255, 0, 0);
-    border-right-color: #E8D8A8;
+    border-right-color: whitesmoke;
     height: 46px;
     width: 220px;
     padding-left: .5em;
@@ -204,7 +204,7 @@ h2 span
 {
     animation-delay: 3s;
     border-color: rgb(11, 94, 1);
-    border-right-color: #E8D8A8;
+    border-right-color: whitesmoke;
     height: 18px;
     width: 380px;
     padding-left: -.5em;
@@ -215,7 +215,7 @@ h2 span
     animation-delay: 2.5s;
     margin-left: 5em;
     border-color: #d303fd;
-    border-right-color: #E8D8A8;
+    border-right-color: whitesmoke;
     height: 36px;
     width: 280px;
     padding-left: .5em;
@@ -226,7 +226,7 @@ h2 span
     animation-delay: 2s;
     margin-right: 5em;
     border-color: #bb8c00;
-    border-right-color: #E8D8A8;
+    border-right-color: whitesmoke;
     height: 28px;
     width: 260px;
     padding-left: 0em;
@@ -237,7 +237,7 @@ h2 span
     animation-delay: 1.5s;
     margin-left: 5em;
     border-color: #5e1d1d;
-    border-right-color: #E8D8A8;
+    border-right-color: whitesmoke;
     height: 40px;
     width: 260px;
     padding-left: .5em;
@@ -248,7 +248,7 @@ h2 span
     animation-delay: 1s;
     margin-right: 5em;
     border-color: #455971;
-    border-right-color: #E8D8A8;
+    border-right-color: whitesmoke;
     height: 30px;
     width: 350px;
     padding-left: 1.5em;
@@ -258,7 +258,7 @@ h2 span
     animation-delay: .5s;
     margin-left: 5em;
     border-color: #0f2847;
-    border-right-color: #E8D8A8;
+    border-right-color: whitesmoke;
     height: 20px;
     width: 250px;
     padding-left: 1.5em;
